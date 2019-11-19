@@ -3,6 +3,7 @@ import './sportspage.styles.scss';
 
 const SportsPage = () =>  (
 	<div className='sportspage'>
+	
 	 </div>
 );
 
