@@ -2,8 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { auth } from '../../firebase/firebase.utils';
 import { ReactComponent as Logo } from '../../assets/logo.svg';
-import SearchField from 'react-search-field';
-
+import SearchBox from '../search-box/search-box.component.jsx'
 
 import './header.styles.scss';
 
@@ -11,15 +10,11 @@ const Header = ({ currentUser, hidden, onEnter }) => (
   <div className='header'>
     <Link className='logo-container' to='/'>
       <Logo className='logo' />
-
     </Link>
 
-    <SearchField  className='search-box'
-      placeholder='Search sport'
-      onEnter={onEnter}
-    />
     <div className='options'>
-      <Link className='option' to='/'>
+      <SearchBox className='search-box'/>
+      <Link className='option' to='/sports'>
         SPORTS
       </Link>
       <Link className='option' to='/'>

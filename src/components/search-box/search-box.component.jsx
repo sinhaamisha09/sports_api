@@ -49,7 +49,7 @@ class SearchBox extends React.Component {
       <div className="searchForm">
         <form>
           <input
-            placeholder="Search for..."
+            placeholder="Search sports"
             value={this.state.query}
             onChange={this.handleInputChange}
           />
@@ -58,6 +58,7 @@ class SearchBox extends React.Component {
       </div>
     );
   }
+}
 
 
 export default SearchBox;

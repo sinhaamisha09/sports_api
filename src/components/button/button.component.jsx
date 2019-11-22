@@ -9,7 +9,7 @@ class Button extends React.Component {
         <i className="fa fa-chevron-right"></i> Find out more
         <Link to={`url(${linkUrl})`} className='option'>
         {category}
-      </Link>
+        </Link>
       </button>
     )
   }

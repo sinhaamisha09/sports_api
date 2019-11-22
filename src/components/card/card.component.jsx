@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import CardBody from '../card-body/card-body.component';
 import CardHeader from '../card-header/card-header.component';
 import './card.styles.scss';
@@ -13,6 +14,7 @@ class Card extends React.Component {
         <CardBody title={title}
           text={text}/>
       </article>
+
     )
   }
 }
