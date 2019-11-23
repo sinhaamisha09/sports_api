@@ -1,4 +1,5 @@
 import React from 'react';
+import MenuItem from '../menu-item/menu-item.component';
 import Title from '../title/title.component';
 import Card from '../card/card.component';
 import './directory.styles.scss';
@@ -10,7 +11,7 @@ const PostsData = [
     id: 1,
     "title": "CNN Acquire BEME",
     "text": "",
-    linkUrl: 'shop/cricket' 
+    linkUrl: '/cricket' 
   },
   {
     "category": "FOOTBALL",
@@ -18,7 +19,7 @@ const PostsData = [
     id: 2,
     "title": "CNN Acquire BEME",
     "text": "",
-    linkUrl: 'shop/footbal'
+    linkUrl: '/footbal'
   },
   {
     "category": "TENNIS",
@@ -26,7 +27,7 @@ const PostsData = [
     id: 3,
     "title": "CNN Acquire BEME",
     "text": "",
-    linkUrl: 'shop/tennis'
+    linkUrl: '/tennis'
   },     
    {
     "category": "BADMINTON",
@@ -34,7 +35,7 @@ const PostsData = [
     id: 4,
     "title": "CNN Acquire BEME",
     "text": "",
-    linkUrl: 'shop/tennis'
+    linkUrl: '/tennis'
   }        
 ]
   
@@ -62,7 +63,9 @@ class Directory extends React.Component {
           {
             Object
             .keys(this.state.posts)
-            .map(key => <Card key={key} index={key} details={this.state.posts[key]}/>)
+            .map(key => 
+              <Card key={key} index={key} details={this.state.posts[key]}/>
+              )
           }
         </div>
       </div>

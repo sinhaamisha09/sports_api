@@ -8,16 +8,19 @@ import './header.styles.scss';
 
 const Header = ({ currentUser, hidden, onEnter }) => (
   <div className='header'>
-    <Link className='logo-container' to='/'>
-      <Logo className='logo' />
-    </Link>
+    <div className='title'>
+      <Link className='logo-container' to='/sports'>
+        <Logo className='logo' />
+      </Link>
+      <h1>SPORTS API</h1>
+     </div> 
 
     <div className='options'>
       <SearchBox className='search-box'/>
       <Link className='option' to='/sports'>
         SPORTS
       </Link>
-      <Link className='option' to='/'>
+      <Link className='option' to='/contacts'>
         CONTACT
       </Link>
       {currentUser ? (

@@ -10,38 +10,38 @@ const ContactsPage = () =>  (
 );
 
 
-class ContactsPage extends React.Component { 
-  constructor() {
-    super();
+// class ContactsPage extends React.Component { 
+//   constructor() {
+//     super();
     
-    this.state = {
-      posts: {}
-    }
-  }
-  componentWillMount() {
-    this.setState({
-      posts: MembersData
-    });
-  } 
+//     this.state = {
+//       posts: {}
+//     }
+//   }
+//   componentWillMount() {
+//     this.setState({
+//       posts: MembersData
+//     });
+//   } 
 
-  render() {
-    return(
-     <div>
-      <div id="app">
-        <header className="app-header"></header>
-        <Title />
-        <div className="app-card-list" id="app-card-list">
-          {
-            Object
-            .keys(this.state.posts)
-            .map(key => <Card key={key} index={key} details={this.state.posts[key]}/>)
-          }
-        </div>
-      </div>
-    </div>
-    );
-  }
-}
+//   render() {
+//     return(
+//      <div>
+//       <div id="app">
+//         <header className="app-header"></header>
+//         <Title />
+//         <div className="app-card-list" id="app-card-list">
+//           {
+//             Object
+//             .keys(this.state.posts)
+//             .map(key => <Card key={key} index={key} details={this.state.posts[key]}/>)
+//           }
+//         </div>
+//       </div>
+//     </div>
+//     );
+//   }
+// }
 
 
 class ContactsPage extends Component {
